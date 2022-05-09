@@ -1,32 +1,15 @@
 import React from 'react'
-import { createGlobalStyle } from 'styled-components'
+import Footer from './Footer'
+
+// If in the future I have multiple pages with re-accuring components on them I can add them here. Like a Navbar or footer, etc.
 
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle />
       {children}
+      <Footer />
     </>
   )
 }
-
-const GlobalStyle = createGlobalStyle`
-  :root {
-    --primary-color: #43F174;
-    --secondary-color: lightblue;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html {
-    font-family: Arial, sans-serif;
-    background-color: #242E41;
-    color: #fafafa;
-  }
-`
 
 export default Layout

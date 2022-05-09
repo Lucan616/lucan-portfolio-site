@@ -11,6 +11,7 @@ module.exports = {
     //     "dataset": ""
     //   }
     // }, 
+    "gatsby-plugin-sass",
     "gatsby-plugin-styled-components", 
     "gatsby-plugin-image", 
     "gatsby-plugin-react-helmet", 
