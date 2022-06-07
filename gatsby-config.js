@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: `Lucan Portfolio Site`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Lucan Portfolio Site`,
+    siteUrl: `https://www.lucan.dev`
   },
   plugins: [
     // {
@@ -12,7 +12,6 @@ module.exports = {
     //   }
     // }, 
     "gatsby-plugin-sass",
-    "gatsby-plugin-styled-components", 
     "gatsby-plugin-image", 
     "gatsby-plugin-react-helmet", 
     "gatsby-plugin-sitemap", 
