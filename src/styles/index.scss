@@ -18,6 +18,13 @@ body {
   color: #f4f4f4;
 }
 
+.site-container {
+  --site-padding: clamp(1rem, 5vw, 4rem);
+  max-width: calc(1400px + var(--site-padding));
+  margin: auto;
+  padding: 0 var(--site-padding);
+}
+
 a {
   color: inherit;
 }

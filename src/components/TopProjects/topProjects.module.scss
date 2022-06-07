@@ -1,5 +1,5 @@
 .top-projects {
-  padding: 0rem 4rem;
+  // padding: 0rem 4rem;
 
   h3 {
     margin-bottom: 3rem;
@@ -9,12 +9,18 @@
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2rem;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // grid-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .project-card {
+  flex: 1 1 400px;
+  max-width: 400px;
   display: inline-block;
   text-decoration: none;
 

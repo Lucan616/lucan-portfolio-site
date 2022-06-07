@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'UPBF',
     featuredImage: upbfImage,
-    url: 'https://upbf.co.za/'
+    url: 'https://upbf.net/'
   },
   {
     title: 'Coltri',

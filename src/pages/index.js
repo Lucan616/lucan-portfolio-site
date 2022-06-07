@@ -10,9 +10,10 @@ const IndexPage = () => {
         <title>Hi, I'm Lucan</title>
       </Helmet>
 
-      <Showcase />
-
-      <TopProjects />
+      <div className="site-container">
+        <Showcase />
+        <TopProjects />
+      </div>
     </div>
   )
 }

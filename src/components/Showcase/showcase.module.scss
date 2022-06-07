@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  padding: 6rem 1rem;
+  // padding: 6rem 0;
+  padding: clamp(4rem, 15vw, 6rem) 0;
 
   p {
     font-family: "Lora", serif;
@@ -16,12 +17,16 @@
 
 .intro {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
 
   img {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
+    height: clamp(150px, 30vw, 200px); // 25vw
+    aspect-ratio: 1 / 1;
     border: solid 4px #fff;
     border-radius: 50%;
   }
@@ -31,16 +36,17 @@
     flex-direction: column;
     justify-content: space-between;
 
-    font-size: 3.5rem;
+    // font-size: 3.5rem;
+    font-size: clamp(1rem, 10vw, 3.5rem); // 7vw
 
     span {
       display: block;
       line-height: 1;
 
       &:last-child {
-        margin-left: -6px;
+        margin-left: -8px;
         font-size: 3em;
-        line-height: 0.75;
+        line-height: 0.79;
       }
     }
   }
