@@ -21,11 +21,11 @@ const Showcase = () => {
       </div>
 
       <p>
-        A front-end developer with 2 years experience,<br/> specialising in JavaScript, React and Gatsby.
+        A front-end developer with 2 years experience,<br/> specialising in JavaScript and React.
       </p>
 
       <div className={styles.socials}>
-        <a href="https://www.linkedin.com/lucan-grobler/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/lucan-grobler/" target="_blank" rel="noreferrer">
           <FaLinkedinIn />
         </a>
         <a href="https://www.hackerrank.com/lucangrobler6" target="_blank" rel="noreferrer">
