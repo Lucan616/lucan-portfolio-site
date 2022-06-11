@@ -1,6 +1,6 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import * as styles from './projectCard.module.scss'
+import * as styles from './ProjectCard.module.scss'
 
 const ProjectCard = ({ title, url, image }) => {
 
