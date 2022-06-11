@@ -13,6 +13,7 @@
   .project-image {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
   }
 
   h4 {
