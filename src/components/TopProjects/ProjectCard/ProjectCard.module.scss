@@ -1,0 +1,35 @@
+.project-card {
+  flex: 1 1 400px;
+  max-width: 400px;
+  display: inline-block;
+  text-decoration: none;
+
+  // img {
+  //   width: 100%;
+  //   object-fit: contain;
+  //   border-radius: 10px;
+  //   transition: transform 0.3s, box-shadow 0.3s;
+  // }
+  .project-image {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  h4 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: color 0.2s;
+  }
+
+  &:hover {
+    .project-image {
+      transform: translateY(-10px);
+      box-shadow: 0px 10px 0px var(--primary-color);
+    }
+
+    h4 {
+      color: var(--primary-color);
+    }
+  }
+}

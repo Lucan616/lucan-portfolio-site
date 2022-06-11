@@ -19,12 +19,19 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem 2rem;
+  gap: 2rem;
 
-  img {
-    display: inline-block;
-    // width: 200px;
-    // height: 200px;
+  // img {
+  //   display: inline-block;
+  //   // width: 200px;
+  //   // height: 200px;
+  //   height: clamp(150px, 30vw, 200px); // 25vw
+  //   aspect-ratio: 1 / 1;
+  //   border: solid 4px #fff;
+  //   border-radius: 50%;
+  // }
+
+  .profileImage {
     height: clamp(150px, 30vw, 200px); // 25vw
     aspect-ratio: 1 / 1;
     border: solid 4px #fff;
@@ -37,7 +44,7 @@
     justify-content: space-between;
 
     // font-size: 3.5rem;
-    font-size: clamp(1rem, 10vw, 3.5rem); // 7vw
+    font-size: clamp(1rem, 9.25vw, 3.5rem); // 7vw
 
     span {
       display: block;

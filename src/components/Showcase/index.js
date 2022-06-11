@@ -1,10 +1,11 @@
 import React from 'react'
 // import { StaticImage } from 'gatsby-plugin-image'
 
-import profileImage from '../../images/profile-image.jpg'
+// import profileImage from '../../images/profile-image.jpg'
 import * as styles from './showcase.module.scss'
 
 import { FaLinkedinIn, FaHackerrank, FaGithub, FaFacebook } from 'react-icons/fa'
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 const Showcase = () => {
@@ -13,7 +14,8 @@ const Showcase = () => {
       {/* <StaticImage src='../images/profile-image.jpg' alt='Lucan Grobler' className="profile-image" /> */}
 
       <div className={styles.intro}>
-        <img src={profileImage} alt="" />
+        <StaticImage className={styles.profileImage} src="../../images/profile-image.jpg" alt="Lucan Grobler" />
+        {/* <img src={profileImage} alt="" /> */}
         <h1>
           <span>Hi, I'm</span>
           <span className="tc-primary name">Lucan</span>
@@ -21,7 +23,7 @@ const Showcase = () => {
       </div>
 
       <p>
-        A front-end developer with 2 years experience,<br/> specialising in JavaScript and React.
+        A front-end developer with 2 years experience,<br /> specialising in JavaScript and React.
       </p>
 
       <div className={styles.socials}>
