@@ -14,7 +14,12 @@ const Showcase = () => {
       {/* <StaticImage src='../images/profile-image.jpg' alt='Lucan Grobler' className="profile-image" /> */}
 
       <div className={styles.intro}>
-        <StaticImage className={styles.profileImage} src="../../images/profile-image.jpg" alt="Lucan Grobler" />
+        <StaticImage 
+          src="../../images/profile-image.jpg" 
+          alt="Lucan Grobler"
+          className={styles.profileImage} 
+          imgClassName={styles.profileImageImg}
+        />
         {/* <img src={profileImage} alt="" /> */}
         <h1>
           <span>Hi, I'm</span>

@@ -15,6 +15,18 @@ html {
 
 body {
   background-color: var(--site-bg-color);
+  // IT'S DONE THIS WEIRD WAY BECAUSE OF FRICKEN SAFARI:
+  // background: 
+  //   radial-gradient(circle 7rem, var(--primary-color) 7rem, transparent 7rem, transparent) calc(85vw - 7rem) calc(-5vh - 7rem)/ 14rem 14rem,
+  //   radial-gradient(circle 10rem, var(--primary-color) 10rem, transparent 10rem, transparent) calc(-1vw - 10rem) calc(60vh - 10rem)/ 20rem 20rem,
+  //   radial-gradient(circle 10rem, var(--primary-color) 10rem, transparent 10rem, transparent) calc(95vw - 10rem) calc(90vh - 10rem)/ 20rem 20rem,
+  //   var(--site-bg-color);
+  // THE EASIER WAY SUPPORTED BY MOST OTHER BROWSERS:
+  background-image: 
+    radial-gradient(circle 7rem at 85vw -5vh, var(--primary-color) 7rem, transparent 7rem, transparent),
+    radial-gradient(circle 10rem at -1vw 60vh, var(--primary-color) 10rem, transparent 10rem, transparent),
+    radial-gradient(circle 10rem at 95vw 90vh, var(--primary-color) 10rem, transparent 10rem, transparent);
+  background-repeat: no-repeat;
   color: #f4f4f4;
 }
 
@@ -66,4 +78,19 @@ a.btn-secondary {
 
 .tc-primary {
   color: var(--primary-color)
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: 
+      radial-gradient(circle 7rem at 15vw -5vh, var(--primary-color) 7rem, transparent 7rem, transparent),
+      radial-gradient(circle 10rem at 125vw 90vh, var(--primary-color) 10rem, transparent 10rem, transparent);
+  }
+
+  // body {
+  //   background: 
+  //     radial-gradient(circle 7rem, var(--primary-color) 7rem, transparent 7rem, transparent) calc(15vw - 7rem) calc(-5vh - 7rem)/ 14rem 14rem no-repeat,
+  //     radial-gradient(circle 10rem, var(--primary-color) 10rem, transparent 10rem, transparent) calc(125vw - 10rem) calc(90vh - 10rem)/ 20rem 20rem no-repeat,
+  //     var(--site-bg-color);
+  // }
 }
