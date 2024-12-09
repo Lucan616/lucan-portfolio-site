@@ -1,18 +1,15 @@
-import React from 'react'
-// import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
+import { FaLinkedinIn, FaHackerrank, FaGithub, FaFacebook } from 'react-icons/fa';
+import { CAREER_START_DATE } from '../../constants';
+import { calculateDiffYears } from '../../helpers';
+import * as styles from './showcase.module.scss';
 
-// import profileImage from '../../images/profile-image.jpg'
-import * as styles from './showcase.module.scss'
+export default function Showcase() {
+  const yearsExperience = calculateDiffYears(new Date(CAREER_START_DATE));
 
-import { FaLinkedinIn, FaHackerrank, FaGithub, FaFacebook } from 'react-icons/fa'
-import { StaticImage } from 'gatsby-plugin-image'
-
-
-const Showcase = () => {
   return (
     <div className={styles.showcase}>
-      {/* <StaticImage src='../images/profile-image.jpg' alt='Lucan Grobler' className="profile-image" /> */}
-
       <div className={styles.intro}>
         <StaticImage 
           src="../../images/profile-image.jpg" 
@@ -20,7 +17,6 @@ const Showcase = () => {
           className={styles.profileImage} 
           imgClassName={styles.profileImageImg}
         />
-        {/* <img src={profileImage} alt="" /> */}
         <h1>
           <span>Hi, I'm</span>
           <span className="tc-primary name">Lucan</span>
@@ -28,7 +24,7 @@ const Showcase = () => {
       </div>
 
       <p>
-        A front-end developer with 2 years experience,<br /> specialising in JavaScript and React.
+        A front-end developer with {yearsExperience} years experience,<br /> specialising in JavaScript and React.
       </p>
 
       <div className={styles.socials}>
@@ -52,5 +48,3 @@ const Showcase = () => {
     </div>
   )
 }
-
-export default Showcase
